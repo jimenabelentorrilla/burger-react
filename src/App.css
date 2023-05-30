@@ -1,0 +1,152 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.nav-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  padding: 1.5rem 8rem;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  list-style: none;
+  
+}
+.nav a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav a li{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.nav a li:hover{
+  color: #ffffff;
+}
+.nav a li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(253, 89, 0, 1);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.nav a li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.li-dec:hover {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+    
+/***************/
+.who-flex{
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.img-who{
+  width: 560px;
+  height: auto;
+}
+.us-title{
+    color: #444444;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 44px;
+    font-family: 'Arvo', serif;
+}
+.hr-grey {
+  opacity: 0.1;
+}
+
+.us-p {
+  font-size: 16px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.8;
+  line-height: 2;
+  width: 590px;
+}
+.menu-title{
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+  font-size: 44px;
+  font-family: Arvo, serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+.brg-img , .ice-img{
+  height: auto;
+  opacity: 0.80;
+  backdrop-filter: blur(0px);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.size-brg{
+  width: 260px;
+}
+.ice-img{
+  width: 310px;
+}
+.brg-img:hover, .ice-img:hover{
+  opacity: 1;
+  backdrop-filter: none;
+  transform: scale(1.05);
+}
+.flex-brg{
+  display: flex;
+  flex-wrap: wrap;
+  gap:40px;
+  align-items: center;
+  justify-content: center;
+}
+.flxbx-brg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brg-title,
+.ice-title {
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: Arvo, serif;
+  text-transform: uppercase;
+}
+.gap-bx{
+  height: 1000px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+    
+    
+  
