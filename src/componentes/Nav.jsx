@@ -17,8 +17,8 @@ function Nav () {
                 <ul className='nav'>
                     <a href='#quienes'><li>Quienes somos</li></a>
                     <a href='#menu'><li>Menu</li></a>
-                    <a href='#'><li>Sucursales</li></a>
-                    <a href='#'><li>Contacto</li></a>
+                    <a href='#suc'><li>Sucursales</li></a>
+                    <a href='#con'><li>Contacto</li></a>
                 </ul>
             </div>
         </div>
