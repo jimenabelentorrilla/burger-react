@@ -11,7 +11,8 @@ import Frp2 from "../assets/frp2.jpg";
 import Frp3 from "../assets/frp3.jpg";
 
 
-function Burger({ title, urlImg }) {
+function Burger({ title, urlImg }) { 
+
     return (
         <>
             <div className='flxbx-brg'>
@@ -45,6 +46,7 @@ const Menu = () => {
             <Row>
                 <Col className='gap-bx'>
                     <h3 className="menu-title">Hamburguesas</h3>
+                    <hr className="hr-grey" />
                     <div className='flex-brg'>
                         <Burger 
                         title="lorem"
@@ -84,6 +86,7 @@ const Menu = () => {
             <Row>
                 <Col className='gap-bx'>
                 <h3 className="menu-title">Postres</h3>
+                <hr className="hr-grey" />
                     <div className='flex-brg'>
                         <Postres 
                         title="lorem"
@@ -102,4 +105,4 @@ const Menu = () => {
   );
 }
 
-export default Menu
+export default Menu;

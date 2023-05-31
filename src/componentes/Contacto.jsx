@@ -9,14 +9,18 @@ import Button from 'react-bootstrap/Button';
 const Contacto = () => {
   return (
     <>
-        <Container className="cont-contact" id="con">
+        <Container fluid className="cont-contact" id="con">
             <Row>
                 <Col>
-                    <div className='fr123'>
-                        <div>
-                            <h3 className="cont-title">CONTACTO</h3>
-                        </div>
-
+                    <div>
+                        <h3 className="cont-title">CONTACTO</h3>
+                        <hr className="hr-grey" />
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <div>
                         <div>
                             <FloatingLabel
                                 controlId="floatingInput"

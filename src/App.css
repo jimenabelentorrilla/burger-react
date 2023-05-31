@@ -97,7 +97,6 @@
   font-family: Arvo, serif;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 1.5em;
 }
 .brg-img , .ice-img{
   height: auto;
@@ -123,6 +122,7 @@
   gap:40px;
   align-items: center;
   justify-content: center;
+  padding-top: 2em;
 }
 .flxbx-brg{
   display: flex;
@@ -207,7 +207,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  flex-direction: column;gap:50px;
 }
 .cont-title{
   color: #444444;
@@ -215,12 +215,7 @@
   font-size: 44px;
   font-family: 'Arvo', serif;
 }
-.fr123{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap:50px;
-}
+
 .form-floating{
   width: 400px;
 }
