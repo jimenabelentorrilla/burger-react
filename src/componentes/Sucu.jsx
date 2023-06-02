@@ -55,18 +55,20 @@ function Sucu () {
                     </div>
                 </Col>
             </Row>
-            <Row xs={1} md={2} className="suc-flex">
-                <Col lg={8}>
+            <Row  md={2} className="suc-flex">
+                <Col  lg={8}>
                     <div>
                         <div className='flex-1545'>
                             <div>
-                                <p className='suc-dir' onClick={handleOlivos}>sucursal olivos</p>
+                                <p className='suc-dir' onClick={handleOlivos} >sucursal olivos</p>
                             </div>
                             <div>
-                                <p className='suc-dir' onClick={handleSanmi}>sucursal san miguel</p>
+                                <p className='suc-dir' onClick={handleSanmi} >sucursal san miguel</p>
                             </div>
                             <div>
-                                <p className='suc-dir' onClick={handleBelgrano}>sucursal belgrano</p>
+                                <p className='suc-dir' onClick={handleBelgrano
+                                
+                                } >sucursal belgrano</p>
                             </div>
                         </div>
                         <iframe src={mapa} width="700" height="400" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      

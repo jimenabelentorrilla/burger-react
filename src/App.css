@@ -2,6 +2,11 @@
   max-width: 100%;
   margin: 0 auto;
 }
+
+body{
+  font-size: 16px;
+}
+
 .nav-flex{
   display: flex;
   flex-direction: row;
@@ -15,9 +20,9 @@
 .nav{
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 3.125em;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03125em;
   list-style: none;
   
 }
@@ -26,7 +31,7 @@
   text-decoration: none;
 }
 .nav a li{
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -40,7 +45,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.125em;
   bottom: 0;
   left: 0;
   background-color: rgba(253, 89, 0, 1);
@@ -61,21 +66,19 @@
     
 /***************/
 .who-flex{
-  height: 650px;
+  height: 40.625em;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: start;
 }
 .img-who{
-  width: 560px;
+  width: 35em;
   height: auto;
 }
 .us-title{
     color: #444444;
     font-weight: 700;
-    padding: 10px;
-    font-size: 44px;
+    padding: 0.625em;
+    font-size: 2.75em;
     font-family: 'Arvo', serif;
 }
 .hr-grey {
@@ -83,17 +86,17 @@
 }
 
 .us-p {
-  font-size: 16px;
-  padding: 10px;
+  font-size: 1em;
+  padding: 0.625em;
   font-family: 'Poppins', sans-serif;
   opacity: 0.8;
   line-height: 2;
-  width: 590px;
+  width: 36.875em;
 }
 .menu-title{
   color: rgb(68, 68, 68);
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2.75em;
   font-family: Arvo, serif;
   text-transform: uppercase;
   text-align: center;
@@ -106,10 +109,10 @@
   cursor: pointer;
 }
 .size-brg{
-  width: 260px;
+  width: 16.25em;
 }
 .ice-img{
-  width: 310px;
+  width: 19.375em;
 }
 .brg-img:hover, .ice-img:hover{
   opacity: 1;
@@ -119,7 +122,7 @@
 .flex-brg{
   display: flex;
   flex-wrap: wrap;
-  gap:40px;
+  gap: 2.5em;
   align-items: center;
   justify-content: center;
   padding-top: 2em;
@@ -133,21 +136,28 @@
 .ice-title {
   color: rgb(68, 68, 68);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375em;
   text-align: center;
   margin-bottom: 1.5rem;
   font-family: Arvo, serif;
   text-transform: uppercase;
 }
 .gap-bx{
-  height: 1000px;
+  
   display:flex;
   justify-content: center;
   flex-direction: column;
 }
+.gap-bx-postre{
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /*********************/
 .cont-suc{
-  height: 700px;
+  height: 43.75em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -155,34 +165,43 @@
 .suc-title{
   color: #444444;
   font-weight: 700;
-  padding: 20px;
-  font-size: 44px;
+  font-size: 2.75em;
   font-family: 'Arvo', serif;
   text-align: center;
-  margin-bottom:10px;
+  margin-bottom: 0.625em;
 }
 .suc-dir{
   color: #444444;
   font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 25px;
+  font-size: 1em;
+  margin-bottom: 1.5625em;
+  font-family: 'Arvo', serif;
+  cursor: pointer;
+  text-transform: uppercase;
+} 
+.suc-dir-active{
+  color: #F2B705;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 1.5625em;
   font-family: 'Arvo', serif;
   cursor: pointer;
   text-transform: uppercase;
 }
+
 .flex-1545{
   display: flex;
   flex-direction: row;
-  gap:35px;
+  gap: 2.1875em;
 }
 .suc-flex{
-  padding: 25px;
+  padding: 1.5625em;
 }
 .info-flex{
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 35px;
+  gap: 2.1875em;
 }
 .info-flex1406{
   display: flex;
@@ -191,37 +210,38 @@
 .subtitle{
   color: #444444;
   font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
   font-family: 'Arvo', serif;
   text-transform: uppercase;
 }
 .inf752{
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 1.5625em;
   align-items: flex-start;
 }
 /**************************/
 .cont-contact{
-  height: 600px;
+  height: 37.5em;
   display: flex;
   justify-content: center;
-  align-items: center;  flex-direction: column;gap:50px;
+  align-items: center;  flex-direction: column;
+  gap: 3.125em;
 }
 .cont-title{
   color: #444444;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2.75em;
   font-family: 'Arvo', serif;
 }
 
 .form-floating{
-  width: 400px;
+  width: 25em;
 }
 /***************************/
 .cont-footer{
-  height: 80px;
+  height: 5em;
   background-color: #444444;
   display: flex;
   align-items: center;
@@ -230,7 +250,7 @@
 .social-flex{
   display: flex;
   flex-direction: row;
-  gap:35px;
+  gap: 2.1875em;
 }
 .a-social{
   text-decoration: none;

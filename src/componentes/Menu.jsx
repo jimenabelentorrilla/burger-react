@@ -2,10 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Burger1 from "../assets/burguer1.jpg";
-import Burger2 from "../assets/burguer2.jpg";
-import Burger3 from "../assets/burguer3.jpg";
-import Burger4 from "../assets/burguer4.jpg";
+import Burger1 from "../assets/burger1.jpg";
+import Burger2 from "../assets/burger2.jpg";
+import Burger3 from "../assets/burger3.jpg";
+import Burger4 from "../assets/burger4.jpg";
+import Burger5 from "../assets/burger5.jpg";
+import Burger6 from "../assets/burger6.jpg";
+import Burger7 from "../assets/burger7.jpg";
+import Burger8 from "../assets/burger8.jpg";
+
+
 import Frp1 from "../assets/frp1.jpg";
 import Frp2 from "../assets/frp2.jpg";
 import Frp3 from "../assets/frp3.jpg";
@@ -49,53 +55,53 @@ const Menu = () => {
                     <hr className="hr-grey" />
                     <div className='flex-brg'>
                         <Burger 
-                        title="lorem"
+                        title="bbq sensation"
                         urlImg={Burger1}
                         />
                         <Burger 
-                        title="lorem"
-                        urlImg={Burger2}
+                        title="beefy pancake"
+                        urlImg={Burger8}
                         />
                         <Burger 
-                        title="lorem"
+                        title="epic burger"
                         urlImg={Burger3}
                         />
                         <Burger 
-                        title="lorem"
+                        title="bacon onion bomb"
                         urlImg={Burger4}
                         />
                         <Burger 
-                        title="lorem"
-                        urlImg={Burger1}
+                        title="smookey grill"
+                        urlImg={Burger5}
                         />
                         <Burger 
-                        title="lorem"
+                        title="cheesy heaven"
+                        urlImg={Burger7}
+                        />
+                        <Burger 
+                        title="deluxe"
+                        urlImg={Burger6}
+                        />
+                        <Burger 
+                        title="crunchy chicken"
                         urlImg={Burger2}
-                        />
-                        <Burger 
-                        title="lorem"
-                        urlImg={Burger3}
-                        />
-                        <Burger 
-                        title="lorem"
-                        urlImg={Burger4}
                         />
                     </div>
                 </Col>
             </Row>
-            <Row>
-                <Col className='gap-bx'>
+            <Row >
+                <Col className='gap-bx-postre'>
                 <h3 className="menu-title">Postres</h3>
                 <hr className="hr-grey" />
                     <div className='flex-brg'>
                         <Postres 
-                        title="lorem"
+                        title="ultimate chocopop"
                         urlImg={Frp1}/>
                         <Postres 
-                        title="lorem"
+                        title="vanilla caramel"
                         urlImg={Frp2}/>
                         <Postres 
-                        title="lorem"
+                        title="dreamwich"
                         urlImg={Frp3}/>
                     </div>
                 </Col>

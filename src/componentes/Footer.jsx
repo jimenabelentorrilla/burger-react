@@ -13,13 +13,13 @@ const Footer = () => {
                 <Col>
                     <div className='social-flex'>
                         <div>
-                            <a className="a-social" href="#"><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faFacebook} /></a>
+                            <a className="a-social" href="https://es-la.facebook.com/" target='_blank'><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faFacebook} /></a>
                         </div>
                         <div>
-                        <a className="a-social" href="#"><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faInstagram} /></a>
+                        <a className="a-social" href="https://www.instagram.com/" target='_blank'><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faInstagram} /></a>
                         </div>
                         <div>
-                        <a className="a-social" href="#"><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faTwitter} /></a>
+                        <a className="a-social" href="https://twitter.com/" target='_blank'><FontAwesomeIcon className="hover-social" color= "#FFFFFF" size="2x" icon={faTwitter} /></a>
                         </div>
                     </div>
                     
