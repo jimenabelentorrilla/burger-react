@@ -15,6 +15,10 @@ import Burger8 from "../assets/burger8.jpg";
 import Frp1 from "../assets/frp1.jpg";
 import Frp2 from "../assets/frp2.jpg";
 import Frp3 from "../assets/frp3.jpg";
+import Frp1Modal from "../assets/frp1Modal.jpg";
+import Frp2Modal from "../assets/frp2Modal.jpg";
+import Frp3Modal from "../assets/frp3Modal.jpg";
+
 
 function Burger({ title, urlImg, texto }) { 
     const [show, setShow] = useState(false);
@@ -30,8 +34,8 @@ function Burger({ title, urlImg, texto }) {
                     src={urlImg} />
             </div>
             <Modal fullscreen show={show} onHide={handleClose}>
-                <Modal.Header className="align-text" closeButton>
-                <Modal.Title className='brg-title'>{title}</Modal.Title>
+                <Modal.Header closeButton>
+                
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
@@ -41,8 +45,12 @@ function Burger({ title, urlImg, texto }) {
                             </Col>
                             <Col className="flex-texto-modal" xs={6} md={4} lg={8}>
                                 <div>
-                                    <p className='texto-modal'>{texto}</p>
+                                    <Modal.Title className='brg-title-modal'>{title}</Modal.Title>
+                                    <div>
+                                        <p className='texto-modal'>{texto}</p>
+                                    </div>
                                 </div>
+                                
                             </Col>
                         </Row>
                     </Container>
@@ -52,7 +60,7 @@ function Burger({ title, urlImg, texto }) {
     );
 }
 
-function Postres({ title, urlImg, texto }) {
+function Postres({ title, urlImg, texto, urlModal }) {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -61,23 +69,30 @@ function Postres({ title, urlImg, texto }) {
     return (
         <>
             <div className='flxbx-brg'>
-                <h5 className='ice-title'> {title} </h5>
+                <h5 className='ice-title'>{title}</h5>
                 <img onClick={handleShow}
                     className="ice-img rounded"
                     src={urlImg} />
             </div>
             <Modal fullscreen show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                <Modal.Title className='ice-title'>{title}</Modal.Title>
+                
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
                         <Row>
-                            <Col xs={12} md={8}>
-                                <img className="width-ice-img" src={urlImg}/>
+                            <Col xs={12} md={8} lg={4}>
+                                <img className="width-ice-img rounded" src={urlModal}/>
                             </Col>
-                            <Col xs={6} md={4}>
-                            <p>{texto}</p>
+                            <Col className="flex-texto-modal" xs={6} md={4} lg={8}>
+                                <div>
+                                    <Modal.Title className='ice-title-modal'>{title}</Modal.Title>
+                                    <div>
+                                        <p className='texto-modal'>{texto}</p>
+                                    </div>
+                                </div>
+                                
+                                
                             </Col>
                         </Row>
                     </Container>
@@ -99,11 +114,11 @@ const Menu = () => {
                         <Burger 
                         title="bbq sensation"
                         urlImg={Burger1}
-                        texto="Una explosión de sabores ahumados, jugosa carne a la parrilla, cebolla caramelizada, panceta crujiente, queso fundido y un toque de frescura con rúcula ¡Una delicia irresistible para los amantes de la BBQ!" />
+                        texto="Una explosión de sabores ahumados, carne a la parrilla, cebolla caramelizada, panceta crujiente, queso fundido y un toque de frescura con rúcula ¡Una delicia irresistible para los amantes de la BBQ!" />
                         <Burger 
                         title="beefy pancake"
                         urlImg={Burger8}
-                        texto="Nuestra hamburguesa triple es una combinación perfecta de sabor y textura. Tres jugosos medallones de carne smasheados entre panes de pancake esponjosos, con capas de queso fundido ¡Una explosión de sabores en cada bocado!
+                        texto="Nuestra hamburguesa triple es una combinación perfecta de sabor y textura. Tres medallones de carne smasheados entre panes de pancake esponjosos, con capas de queso fundido ¡Una explosión de sabores en cada bocado!
                         " />
                         <Burger 
                         title="epic burger"
@@ -113,7 +128,7 @@ const Menu = () => {
                         <Burger 
                         title="bacon onion bomb"
                         urlImg={Burger4}
-                        texto="Un verdadero deleite para los amantes de los sabores intensos. Se combina el crujiente bacon y cebolla caramelizada para crear una explosión de sabores irresistibles. Descubre el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial de bacon y cebolla caramelizada ¡Una opción que deleitará tus papilas gustativas!
+                        texto="Un verdadero deleite para los amantes de los sabores intensos. Se combina la panceta y cebolla caramelizada para crear una explosión de sabores irresistibles. Descubrí el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial. ¡Una opción que deleitará tus papilas gustativas!
                         " />
                         <Burger 
                         title="smookey grill"
@@ -122,17 +137,17 @@ const Menu = () => {
                         <Burger 
                         title="cheesy heaven"
                         urlImg={Burger7}
-                        texto="Una auténtica delicia para los amantes del queso. Presentamos un suculento medallón grande de carne jugosa, acompañado por una generosa porción de dos tipos de queso derretido, que le brindan una explosion de sabor cremoso. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet con mucho queso!
+                        texto="Una auténtica delicia para los amantes del queso. Presentamos un medallón de carne, acompañado por una generosa porción de dos tipos de queso derretido, que le brindan una explosion de sabor. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet con mucho queso!
                         " />
                         <Burger 
                         title="deluxe"
                         urlImg={Burger6}
-                        texto="Una combinación de sabores cautivadores. Añadimos un toque de frescura con la rúcula, que aporta un sabor ligeramente picante y refrescante. Para un toque adicional de dulzura y color incorporamos cebolla morada caramelizada. Disfruta de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no querrás perderte!
+                        texto="Una combinación de sabores cautivadores. Añadimos un toque de frescura con la rúcula, que aporta un sabor ligeramente picante y refrescante. Para un toque adicional de dulzura y color incorporamos cebolla morada caramelizada. Disfrutá de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no vas a querer perderte!
                         " />
                         <Burger 
                         title="crunchy chicken"
                         urlImg={Burger2}
-                        texto="Una verdadera explosion de sabores. Agregamos la frescura y el toque crujiente del pepinillo, junto con el sabor único de la ciboulette. Pero lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar una mezcla irresistible de sabores agridulces y especiales. ¡Una verdadera fiesta para tus papilas gustativas!" />
+                        texto="Una verdadera explosión de sabores. Agregamos la frescura y el toque crujiente del pepino, junto con el sabor único de la ciboulette. Pero lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar una mezcla irresistible de sabores agridulces y especiales. ¡Una fiesta para tus papilas gustativas!" />
                     </div>
                 </Col>
             </Row>
@@ -144,15 +159,18 @@ const Menu = () => {
                         <Postres 
                         title="ultimate chocopop"
                         urlImg={Frp1}
-                        texto="El regalo perfecto para satisfacer tus antojos dulces. Cada mordisco es una experiencia deliciosa que combina la frescura del helado con la riqueza y suavidad del chocolate. Disfruta de nuestras paletas y déjate cautivar por esta deliciosa indulgencia. " />
+                        urlModal={Frp1Modal}
+                        texto="El regalo perfecto para satisfacer tus antojos dulces. Cada mordisco es una experiencia deliciosa que combina la frescura del helado con la riqueza y suavidad del chocolate. ¡Dejáte cautivar por esta deliciosa indulgencia! " />
                         <Postres 
                         title="vanilla caramel"
                         urlImg={Frp2}
-                        texto="Una verdadera delicia para los amantes de los sabores dulces. Disfruta de nuestros conos con salsa de caramelo y déjate llevar por esta exquisita experiencia de sabor."/>
+                        urlModal={Frp2Modal}
+                        texto="Una verdadera delicia para los amantes de los sabores dulces. Disfrutá de nuestros conos con salsa de caramelo y dejáte llevar por esta exquisita experiencia de sabor."/>
                         <Postres 
                         title="dreamwich"
                         urlImg={Frp3}
-                        texto="Una combinación perfecta de sabores y texturas. Sumérgete en la dulzura y frescura de nuestro Sandwich de Helado de Chocolate y Vainilla, y déjate llevar por esta exquisita experiencia helada.
+                        urlModal={Frp3Modal}
+                        texto="Una combinación perfecta de sabores y texturas. Sumergite en la dulzura y frescura de nuestro Sandwich de Helado de Chocolate y Vainilla. ¡Dejáte llevar por esta exquisita experiencia helada!
                         " />
                     </div>
                 </Col>

@@ -125,12 +125,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
 .ice-img{
   width: 19.375em;
 }
 .width-ice-img{
-  width: 324px;
+  width: 440px;
 }
 .brg-img:hover, .ice-img:hover{
   opacity: 1;
@@ -150,12 +152,9 @@ body{
   flex-direction: column;
   align-items: center;
 }
-.align-text{
-  display: flex;
-  justify-content: center;
-}
+
 .modal-header{
-  padding: 25px 30px;
+  padding: 15px 60px;
 }
 
 .brg-title,
@@ -168,6 +167,15 @@ body{
   font-family: Arvo, serif !important;
   text-transform: uppercase !important;
 }
+.brg-title-modal , .ice-title-modal{
+  margin-bottom: 1.5rem !important;
+  font-family: Arvo, serif !important;
+  text-transform: uppercase !important;
+  color: #c29203;
+  font-weight: 700 !important;
+  font-size: 2.875em !important;
+}
+
 .gap-bx{
   
   display:flex;
