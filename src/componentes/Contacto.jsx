@@ -106,7 +106,7 @@ const Contacto = () => {
           </Col>
         </Row>
       </Container>
-      <Modal size="lg" show={show} onHide={handleClose}>
+      <Modal centered size="lg" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
         </Modal.Header>
         
