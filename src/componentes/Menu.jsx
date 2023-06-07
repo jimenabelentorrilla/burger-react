@@ -103,6 +103,72 @@ function Postres({ title, urlImg, texto, urlModal }) {
 }
 
 const Menu = () => {
+
+    const burgers = [
+        {
+          title: "bbq sensation",
+          urlImg: Burger1,
+          texto: "Una explosión de sabores ahumados, carne a la parrilla, cebolla caramelizada, panceta crujiente, queso fundido y un toque de frescura con rúcula ¡Una delicia irresistible para los amantes de la BBQ!"
+        },
+        {
+          title: "beefy pancake",
+          urlImg: Burger8,
+          texto: "Nuestra hamburguesa triple es una combinación perfecta de sabor y textura. Tres medallones de carne smasheados entre panes de pancake esponjosos, con capas de queso fundido ¡Una explosión de sabores en cada bocado!"
+        },
+        {
+          title: "epic burger",
+          urlImg: Burger3,
+          texto: "Nuestra hamburguesa completa con pan de semillas es una experiencia gourmet en un solo bocado. Con un generoso medallón de carne cuidadosamente sazonado, con un esponjoso pan de semillas crujientes. Acompañado con ingredientes frescos y una selección de salsas deliciosas. ¡Una experiencia culinaria única y satisfactoria!"
+        },
+        {
+          title: "bacon onion bomb",
+          urlImg: Burger4,
+          texto: "Un verdadero deleite para los amantes de los sabores intensos. Se combina la panceta y cebolla caramelizada para crear una explosión de sabores irresistibles. Descubrí el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial. ¡Una opción que deleitará tus papilas gustativas!"
+        },
+        {
+          title: "smookey grill",
+          urlImg: Burger5,
+          texto: "Te transportará a una experiencia culinaria llena de sabores intensos. Un medallón de carne con un delicioso toque ahumado, se combina con la frescura crujiente de la lechuga morada y la intensidad de los tomates secos. ¡Una opción única para los amantes de las hamburguesas con un toque gourmet!"
+        },
+        {
+          title: "cheesy heaven",
+          urlImg: Burger7,
+          texto: "Una auténtica delicia para los amantes del queso. Presentamos un medallón de carne, acompañado por una generosa porción de dos tipos de queso derretido, que le brindan una explosion de sabor. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet con mucho queso!"
+        },
+        {
+          title: "deluxe",
+          urlImg: Burger6,
+          texto: "Una combinación de sabores cautivadores. Añadimos un toque de frescura con la rúcula, que aporta un sabor ligeramente picante y refrescante. Para un toque adicional de dulzura y color incorporamos cebolla morada caramelizada. Disfrutá de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no vas a querer perderte!"
+        },
+        {
+          title: "crunchy chicken",
+          urlImg: Burger2,
+          texto: "Una verdadera explosión de sabores. Agregamos la frescura y el toque crujiente del pepino, junto con el sabor único de la ciboulette. Pero lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar una mezcla irresistible de sabores agridulces y especiales. ¡Una fiesta para tus papilas gustativas!"
+        }
+      ];
+
+      const postres = [
+        {
+          title: "ultimate chocopop",
+          urlImg: Frp1,
+          urlModal: Frp1Modal,
+          texto: "El regalo perfecto para satisfacer tus antojos dulces. Cada mordisco es una experiencia deliciosa que combina la frescura del helado con la riqueza y suavidad del chocolate. ¡Dejáte cautivar por esta deliciosa indulgencia!"
+        },
+        {
+          title: "vanilla caramel",
+          urlImg: Frp2,
+          urlModal: Frp2Modal,
+          texto: "Una verdadera delicia para los amantes de los sabores dulces. Disfrutá de nuestros conos con salsa de caramelo y dejáte llevar por esta exquisita experiencia de sabor."
+        },
+        {
+          title: "dreamwich",
+          urlImg: Frp3,
+          urlModal: Frp3Modal,
+          texto: "Una combinación perfecta de sabores y texturas. Sumergite en la dulzura y frescura de nuestro Sandwich de Helado de Chocolate y Vainilla. ¡Dejáte llevar por esta exquisita experiencia helada!"
+        }
+      ];
+      
+
   return (
     <>
         <Container id="menu" fluid="md">
@@ -111,43 +177,14 @@ const Menu = () => {
                     <h3 className="menu-title">Hamburguesas</h3>
                     <hr className="hr-grey" />
                     <div className='flex-brg'>
-                        <Burger 
-                        title="bbq sensation"
-                        urlImg={Burger1}
-                        texto="Una explosión de sabores ahumados, carne a la parrilla, cebolla caramelizada, panceta crujiente, queso fundido y un toque de frescura con rúcula ¡Una delicia irresistible para los amantes de la BBQ!" />
-                        <Burger 
-                        title="beefy pancake"
-                        urlImg={Burger8}
-                        texto="Nuestra hamburguesa triple es una combinación perfecta de sabor y textura. Tres medallones de carne smasheados entre panes de pancake esponjosos, con capas de queso fundido ¡Una explosión de sabores en cada bocado!
-                        " />
-                        <Burger 
-                        title="epic burger"
-                        urlImg={Burger3}
-                        texto="Nuestra hamburguesa completa con pan de semillas es una experiencia gourmet en un solo bocado. Con un generoso medallón de carne cuidadosamente sazonado, con un esponjoso pan de semillas crujientes. Acompañado con ingredientes frescos y una selección de salsas deliciosas. ¡Una experiencia culinaria única y satisfactoria!
-                        " />
-                        <Burger 
-                        title="bacon onion bomb"
-                        urlImg={Burger4}
-                        texto="Un verdadero deleite para los amantes de los sabores intensos. Se combina la panceta y cebolla caramelizada para crear una explosión de sabores irresistibles. Descubrí el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial. ¡Una opción que deleitará tus papilas gustativas!
-                        " />
-                        <Burger 
-                        title="smookey grill"
-                        urlImg={Burger5}
-                        texto="Te transportará a una experiencia culinaria llena de sabores intensos. Un medallón de carne con un delicioso toque ahumado, se combina con la frescura crujiente de la lechuga morada y la intensidad de los tomates secos. ¡Una opción única para los amantes de las hamburguesas con un toque gourmet!" />
-                        <Burger 
-                        title="cheesy heaven"
-                        urlImg={Burger7}
-                        texto="Una auténtica delicia para los amantes del queso. Presentamos un medallón de carne, acompañado por una generosa porción de dos tipos de queso derretido, que le brindan una explosion de sabor. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet con mucho queso!
-                        " />
-                        <Burger 
-                        title="deluxe"
-                        urlImg={Burger6}
-                        texto="Una combinación de sabores cautivadores. Añadimos un toque de frescura con la rúcula, que aporta un sabor ligeramente picante y refrescante. Para un toque adicional de dulzura y color incorporamos cebolla morada caramelizada. Disfrutá de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no vas a querer perderte!
-                        " />
-                        <Burger 
-                        title="crunchy chicken"
-                        urlImg={Burger2}
-                        texto="Una verdadera explosión de sabores. Agregamos la frescura y el toque crujiente del pepino, junto con el sabor único de la ciboulette. Pero lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar una mezcla irresistible de sabores agridulces y especiales. ¡Una fiesta para tus papilas gustativas!" />
+                        {burgers.map((burger, index) => (
+                        <Burger
+                            key={index}
+                            title={burger.title}
+                            urlImg={burger.urlImg}
+                            texto={burger.texto}
+                        />
+                        ))}
                     </div>
                 </Col>
             </Row>
@@ -156,22 +193,15 @@ const Menu = () => {
                 <h3 className="menu-title">Postres</h3>
                 <hr className="hr-grey" />
                     <div className='flex-brg'>
-                        <Postres 
-                        title="ultimate chocopop"
-                        urlImg={Frp1}
-                        urlModal={Frp1Modal}
-                        texto="El regalo perfecto para satisfacer tus antojos dulces. Cada mordisco es una experiencia deliciosa que combina la frescura del helado con la riqueza y suavidad del chocolate. ¡Dejáte cautivar por esta deliciosa indulgencia! " />
-                        <Postres 
-                        title="vanilla caramel"
-                        urlImg={Frp2}
-                        urlModal={Frp2Modal}
-                        texto="Una verdadera delicia para los amantes de los sabores dulces. Disfrutá de nuestros conos con salsa de caramelo y dejáte llevar por esta exquisita experiencia de sabor."/>
-                        <Postres 
-                        title="dreamwich"
-                        urlImg={Frp3}
-                        urlModal={Frp3Modal}
-                        texto="Una combinación perfecta de sabores y texturas. Sumergite en la dulzura y frescura de nuestro Sandwich de Helado de Chocolate y Vainilla. ¡Dejáte llevar por esta exquisita experiencia helada!
-                        " />
+                    {postres.map((postre, index) => (
+                        <Postres
+                        key={index}
+                        title={postre.title}
+                        urlImg={postre.urlImg}
+                        urlModal={postre.urlModal}
+                        texto={postre.texto}
+                        />
+                    ))}
                     </div>
                 </Col>
             </Row>
