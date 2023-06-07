@@ -66,9 +66,10 @@ body{
     
 /***************/
 .who-flex{
-  height: 40.625em;
+  height: fit-content;
   display: flex;
   align-items: center;
+  padding:45px
 }
 .img-who{
   width: 35em;
@@ -212,16 +213,10 @@ body{
   font-family: 'Arvo', serif;
   cursor: pointer;
   text-transform: uppercase;
+  background-color: #ffd27761;
+  padding: 10px;
+  border-radius: 25px;
 } 
-.suc-dir-active{
-  color: #F2B705;
-  font-weight: 700;
-  font-size: 1em;
-  margin-bottom: 1.5625em;
-  font-family: 'Arvo', serif;
-  cursor: pointer;
-  text-transform: uppercase;
-}
 
 .flex-1545{
   display: flex;
@@ -248,6 +243,12 @@ body{
   margin-bottom: 0.5em;
   font-family: 'Arvo', serif;
   text-transform: uppercase;
+}
+.par-info{
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #444444;
 }
 .inf752{
   display: flex;

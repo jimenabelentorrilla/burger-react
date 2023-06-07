@@ -9,12 +9,12 @@ const Quienes = () => {
     <>
     <Container id="quienes">
       <Row xs={1} md={2} className="who-flex">
-        <Col>
+        <Col xs={12} md={12} lg={6} >
             <div>
                 <img className="img-who" src={ImgWho} />
             </div>
         </Col>
-        <Col>
+        <Col xs={12} md={12} lg={6}>
             <div>
                 <h1 className="us-title">QUIENES SOMOS</h1>
                 <hr className="hr-grey" />
