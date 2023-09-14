@@ -13,7 +13,7 @@ function Nav () {
             <div>
                 <img src={Logo}/>
             </div>
-            <div>
+            <div className="dsp-none">
                 <ul className='nav'>
                     <a href='#quienes'><li>Quienes somos</li></a>
                     <a href='#menu'><li>Menu</li></a>
