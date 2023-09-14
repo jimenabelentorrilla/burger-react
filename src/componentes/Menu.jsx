@@ -40,10 +40,13 @@ function Burger({ title, urlImg, texto }) {
                 <Modal.Body>
                     <Container>
                         <Row>
-                            <Col xs={12} md={8} lg={4}>
-                                <img className="width-brg-img rounded" src={urlImg}/>
+                            <Col xs={6} md={6} lg={6} xl={6} xxl={6}>
+                                <div className="justify-content-center">
+                                    <img className="width-brg-img rounded" src={urlImg}/>
+                                </div>
+                                
                             </Col>
-                            <Col className="flex-texto-modal" xs={6} md={4} lg={8}>
+                            <Col className="flex-texto-modal" xs={6} md={6} lg={6} xl={6} xxl={6}>
                                 <div>
                                     <Modal.Title className='brg-title-modal'>{title}</Modal.Title>
                                     <div>
@@ -81,10 +84,10 @@ function Postres({ title, urlImg, texto, urlModal }) {
                 <Modal.Body>
                     <Container>
                         <Row>
-                            <Col xs={12} md={8} lg={4}>
+                            <Col className="justify-content-center" xs={6} md={6} lg={6} xl={6} xxl={6}>
                                 <img className="width-ice-img rounded" src={urlModal}/>
                             </Col>
-                            <Col className="flex-texto-modal" xs={6} md={4} lg={8}>
+                            <Col className="flex-texto-modal" xs={6} md={6} lg={6} xl={6} xxl={6}>
                                 <div>
                                     <Modal.Title className='ice-title-modal'>{title}</Modal.Title>
                                     <div>
@@ -118,32 +121,32 @@ const Menu = () => {
         {
           title: "epic burger",
           urlImg: Burger3,
-          texto: "Nuestra hamburguesa completa con pan de semillas es una experiencia gourmet en un solo bocado. Con un generoso medallón de carne cuidadosamente sazonado, con un esponjoso pan de semillas crujientes. Acompañado con ingredientes frescos y una selección de salsas deliciosas. ¡Una experiencia culinaria única y satisfactoria!"
+          texto: "Nuestra hamburguesa completa con pan de semillas es una experiencia gourmet en un solo bocado. Acompañado con ingredientes frescos y una selección de salsas deliciosas. ¡Una experiencia culinaria única y satisfactoria!"
         },
         {
           title: "bacon onion bomb",
           urlImg: Burger4,
-          texto: "Un verdadero deleite para los amantes de los sabores intensos. Se combina la panceta y cebolla caramelizada para crear una explosión de sabores irresistibles. Descubrí el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial. ¡Una opción que deleitará tus papilas gustativas!"
+          texto: "Un verdadero deleite para los amantes de los sabores intensos. Descubrí el equilibrio perfecto entre lo salado y lo dulce con nuestra hamburguesa especial. ¡Una opción que deleitará tus papilas gustativas!"
         },
         {
           title: "smookey grill",
           urlImg: Burger5,
-          texto: "Te transportará a una experiencia culinaria llena de sabores intensos. Un medallón de carne con un delicioso toque ahumado, se combina con la frescura crujiente de la lechuga morada y la intensidad de los tomates secos. ¡Una opción única para los amantes de las hamburguesas con un toque gourmet!"
+          texto: "Te transportará a una experiencia culinaria llena de sabores intensos. ¡Una opción única para los amantes de las hamburguesas con un toque gourmet!"
         },
         {
           title: "cheesy heaven",
           urlImg: Burger7,
-          texto: "Una auténtica delicia para los amantes del queso. Presentamos un medallón de carne, acompañado por una generosa porción de dos tipos de queso derretido, que le brindan una explosion de sabor. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet con mucho queso!"
+          texto: "Una auténtica delicia para los amantes del queso. ¡Una opción irresistible para aquellos que buscan una experiencia gourmet!"
         },
         {
           title: "deluxe",
           urlImg: Burger6,
-          texto: "Una combinación de sabores cautivadores. Añadimos un toque de frescura con la rúcula, que aporta un sabor ligeramente picante y refrescante. Para un toque adicional de dulzura y color incorporamos cebolla morada caramelizada. Disfrutá de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no vas a querer perderte!"
+          texto: "Una combinación de sabores cautivadores. Disfrutá de la perfecta armonía entre los sabores intensos y frescos ¡Una experiencia deliciosa que no vas a querer perderte!"
         },
         {
           title: "crunchy chicken",
           urlImg: Burger2,
-          texto: "Una verdadera explosión de sabores. Agregamos la frescura y el toque crujiente del pepino, junto con el sabor único de la ciboulette. Pero lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar una mezcla irresistible de sabores agridulces y especiales. ¡Una fiesta para tus papilas gustativas!"
+          texto: "Lo que realmente eleva esta hamburguesa es nuestra deliciosa salsa estilo americana que combina ingredientes seleccionados para brindar sabores agridulces y especiales. ¡Una fiesta para tus papilas gustativas!"
         }
       ];
 

@@ -108,7 +108,6 @@ body{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.8;
-  width: 520px;
 }
 .flex-texto-modal{
   display: flex;
@@ -290,11 +289,19 @@ body{
   width: 45px;
   
 }
+.modal-body{
+  display:flex;
+  align-items: center;
+}
 .Modal-text{
   text-align: center;
 }
 .modal-footer{
   justify-content: center !important;
+}
+.justify-content-center{
+  display: flex;
+  justify-content: center;
 }
 
 /* X-Small */
@@ -337,9 +344,9 @@ body{
   .us-title{
     font-size: 47px;
   }
-  .gap-bx-postre{
-    height: 1580px;
-  }
+  .gap-bx-postre {
+    height: 800px;
+}
   .suc-dir{
     font-size: 17px;
     padding: 12px;
@@ -367,6 +374,24 @@ body{
 }
 .who-flex{
   height: 1200px;
+}
+/**Modal*/
+
+.width-brg-img, .width-ice-img{
+  width:240px;
+}
+.brg-title-modal, .ice-title-modal {
+  font-size: 30px !important;
+}
+.texto-modal {
+  font-size: 16px;
+  width: 300px;
+}
+.ice-img{
+  width:200px;
+}
+.ice-title{
+  font-size: 17px !important;
 }
 }
 
@@ -423,6 +448,29 @@ body{
 }
 .nav a li{
   font-size: 18px;
+}
+.width-brg-img {
+    width: 320px;
+}
+.ice-img{
+  width: 250px;
+}
+.ice-title{
+  font-size: 20px !important;
+}
+.gap-bx-postre{
+  height: 900px;
+}
+/**Modal*/
+.width-brg-img, .width-ice-img { 
+  width:260px;
+}
+.brg-title-modal, .ice-title-modal {
+  font-size: 32px !important;
+}
+.texto-modal{
+  font-size: 18px;
+  width: 328px;
 }  
 }
 
@@ -479,6 +527,17 @@ body{
 .nav-flex{
  padding: 24px 100px;
 }
+/**Modal*/
+.width-brg-img, .width-ice-img { 
+  width:280px;
+}
+.brg-title-modal, .ice-title-modal {
+  font-size: 34px !important;
+}
+.texto-modal{
+  font-size: 20px;
+  width: 380px;
+}
 }
 @media (width >= 1400px){
   /* Estilos para pantallas de 1400px o más */
@@ -510,6 +569,20 @@ body{
   .flex-1545{
     gap:24px;
     width: 710px;
-  }  
+  }
+  .nav a li{
+    font-size: 20px;
+  }
+  /**Modal*/
+.width-brg-img, .width-ice-img { 
+  width:300px;
+}
+.brg-title-modal, .ice-title-modal {
+  font-size: 35px !important;
+}
+.texto-modal{
+  font-size: 22px;
+  width: 400px;
+}
 }
 
