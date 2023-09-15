@@ -142,12 +142,12 @@ body {
   color: rgb(68, 68, 68);
   font-weight: 700 !important;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1em;
   font-family: Arvo, serif !important;
   text-transform: uppercase !important;
 }
 .brg-title-modal , .ice-title-modal{
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1em !important;
   font-family: Arvo, serif !important;
   text-transform: uppercase !important;
   color: #c29203;
@@ -264,11 +264,13 @@ body {
 .Modal-flex-img{
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  padding: 20px;  
 }
 .modal-body{
   display:flex;
   align-items: center;
+  justify-content: center;
 }
 .Modal-text{
   text-align: center;
@@ -320,8 +322,7 @@ body {
     width: 80% !important;
   }
   .flex-1545 {
-    gap: 17px;
-    width: 700px;
+    gap: 9px;
 }
    
   .us-title, .menu-title, .suc-title, .cont-title{
@@ -381,7 +382,6 @@ body {
   width: 300px;
 }
 
-
 /**iframe**/
 iframe {
   width: 8100%;
@@ -408,7 +408,7 @@ iframe {
     align-content: space-evenly;
   }
   .img-who {
-    width: 550px;
+    width: 80%;
     height: auto;
   }
   .us-p {
@@ -573,9 +573,7 @@ iframe {
   height: 1000px;
 }
 .flex-1545{
-  gap: 18px;
-  width: 700px;
-  
+  gap: 18px;  
 }
 .flx-cnt{
   display: flex;
@@ -587,7 +585,7 @@ iframe {
   gap:100px;
 }
 .suc-dir{
-  font-size: 17px;
+  font-size: 15px;
   padding: 12px;
 }
 .par-info{
@@ -599,10 +597,6 @@ iframe {
 .cont-contact{
   height: 700px;
   gap:32px;
-}
-.flex-1545{
-  gap:18px;
-  width: 700px;
 }
 .nav a li{
   font-size: 18px;
