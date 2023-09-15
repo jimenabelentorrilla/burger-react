@@ -74,7 +74,7 @@ function Sucu () {
                             </div>
                         ))}
                         </div>
-                        <div>
+                        <div className='cont-iframe'>
                             <iframe  src={mapa} width="700" height="400" style={{border:0}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
                         </div>
                         
