@@ -11,7 +11,7 @@ function Nav () {
     <>
         <div className='nav-flex'>
             <div>
-                <img src={Logo}/>
+                <img className="wdt-logo" src={Logo}/>
             </div>
             <div className="dsp-none">
                 <ul className='nav'>

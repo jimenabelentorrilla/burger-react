@@ -18,7 +18,7 @@ const Quienes = () => {
             </div>
         </Col>
         <Col xs={12} md={12} lg={6} xl={6} xxl={6} >
-            <div>
+            <div className="cnt-img">
                 <img className="img-who" src={ImgWho} />
             </div>
         </Col>

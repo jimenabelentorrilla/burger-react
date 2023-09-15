@@ -11,7 +11,7 @@ function Info({ title, icon, info, customStyle }) {
         <>
             <div className='inf752'>
                 <div>
-                    <FontAwesomeIcon color= "#D1D1D1" size="3x" icon={icon} style={customStyle} />
+                    <FontAwesomeIcon className="icons" color= "#D1D1D1" size="3x" icon={icon} style={customStyle} />
                 </div>
                 <div>
                     <h5 className='subtitle'> {title} </h5>
