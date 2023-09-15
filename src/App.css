@@ -288,12 +288,16 @@ body {
   display: flex;
   justify-content: center;
 }
+.cont-iframe{
+  display: flex;
+  justify-content: center;
+}
 
 /* X-Small */
 @media (width <= 575px) {
   /* Estilos para pantallas menores a 576px */
   .wdt-logo{
-    width:45px;
+    width:30px;
   }
   .nav a li {
     display: none;
@@ -330,7 +334,7 @@ body {
     height: 380px;
 }
   .suc-dir{
-    font-size: 8px;
+    font-size: 7px;
     padding: 8px;
   }
   .suc-flex{
@@ -345,29 +349,29 @@ body {
   height: 650px;
 }
 .par-info{
-  font-size: 12px;
+  font-size: 11px;
 }
 .subtitle{
-  font-size: 11px !important;
+  font-size: 12px !important;
 }
 
 .brg-title, .ice-title{
   font-size: 7px !important;
 }
 .size-brg, .ice-img{
-  width: 85px;
+  width: 75px;
 }
 /**Modal*/
 
 .width-brg-img, .width-ice-img{
-  width: 200px;
+  width: 150px;
 }
 .brg-title-modal, .ice-title-modal {
-  font-size: 28px !important;
+  font-size: 18px !important;
 }
 .texto-modal {
-  font-size: 14px;
-  width: 300px;
+  font-size: 10px;
+  width: 160px;
 }
 .fa-2x {
     font-size: 1.2em;
@@ -383,7 +387,7 @@ body {
 
 /**iframe**/
 iframe {
-  width: 100%;
+  width: 80%;
   height:200px;
 }
 
