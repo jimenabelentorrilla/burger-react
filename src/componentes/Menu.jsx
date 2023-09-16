@@ -40,13 +40,13 @@ function Burger({ title, urlImg, texto }) {
                 <Modal.Body>
                     <Container>
                         <Row>
-                            <Col xs={6} md={6} lg={6} xl={6} xxl={6}>
+                            <Col sm={6} xs={12} md={6} lg={6} xl={6} xxl={6}>
                                 <div className="justify-content-center">
                                     <img className="width-brg-img rounded" src={urlImg}/>
                                 </div>
                                 
                             </Col>
-                            <Col className="flex-texto-modal" xs={6} md={6} lg={6} xl={6} xxl={6}>
+                            <Col className="flex-texto-modal" sm={6} xs={12} md={6} lg={6} xl={6} xxl={6}>
                                 <div>
                                     <Modal.Title className='brg-title-modal'>{title}</Modal.Title>
                                     <div>
