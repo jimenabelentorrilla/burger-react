@@ -91,7 +91,7 @@ function Postres({ title, urlImg, texto, urlModal }) {
                                 <div>
                                     <Modal.Title className='ice-title-modal'>{title}</Modal.Title>
                                     <div>
-                                        <p className='texto-modal'>{texto}</p>
+                                        <p className='texto-modal wdt-p'>{texto}</p>
                                     </div>
                                 </div>
                                 

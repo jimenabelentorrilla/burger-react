@@ -355,6 +355,9 @@ body {
 .flex-brg{
   gap: 1.5em;
 }
+.justify-content-center{
+  padding: 25px;
+}
 
 .brg-title, .ice-title{
   font-size: 7px !important;
@@ -365,14 +368,17 @@ body {
 /**Modal*/
 
 .width-brg-img, .width-ice-img{
-  width: 150px;
+  width: 110px;
 }
 .brg-title-modal, .ice-title-modal {
   font-size: 18px !important;
 }
 .texto-modal {
   font-size: 10px;
-  width: 160px;
+  width: 205px;
+}
+.wdt-p{
+  width:165px;
 }
 .fa-2x {
     font-size: 1.2em;
