@@ -329,7 +329,7 @@ body {
     font-size: 16px !important;
   }
   .gap-bx-postre {
-    height: 380px;
+    height: 350px;
 }
   .suc-dir{
     font-size: 7px;
@@ -351,6 +351,9 @@ body {
 }
 .subtitle{
   font-size: 12px !important;
+}
+.flex-brg{
+  gap: 1.5em;
 }
 
 .brg-title, .ice-title{
